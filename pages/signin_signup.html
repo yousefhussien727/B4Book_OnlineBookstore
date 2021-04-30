@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>B4B | SignIn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../logo/icon.png" sizes="32x32">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/sign.css">
+
+</head>
+
+<body>
+    <div id="wrap">
+        <!--------------------->
+        <header>
+            <div class="container">
+                <div class="main-logo">
+                    <a href="../index.html"><img src="../logo/main.png" alt="B4B Bookstore"></a>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="What are you looking for?" name="search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="signin">
+                    <a href="signin_signup.html">
+                        <p>Sign In &#10095;</p><i class="fas fa-user-circle"></i>
+                    </a>
+                </div>
+                <div class="cart" id="cartBtn">
+                    <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span id="close">&times;</span>
+                        <p>Your Shopping Cart is Empty..</p>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById('myModal');
+                    var btn = document.getElementById("cartBtn");
+                    var span = document.getElementById("close");
+
+                    btn.onclick = function () {
+                        modal.style.display = "block";
+                    }
+
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+        </header>
+        <!--------------------->
+        <nav>
+            <div class="container">
+                <div class="topnav">
+                    <div class="dropdown">
+                        <a class="main dropbtn" href="#">Categories <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <a href="fiction.html">ِِArabic</a>
+                                <a href="fiction.html">Business</a>
+                                <a href="fiction.html">Biography</a>
+                            </div>
+                            <div class="row">
+                                <a href="fiction.html">Kids</a>
+                                <a href="fiction.html">History</a>
+                                <a href="fiction.html">Westerns</a>
+                            </div>
+                            <div class="row">
+                                <a href="fiction.html">Fiction & Literature</a>
+                                <a href="fiction.html">CookBooks & Food</a>
+                                <a href="fiction.html">Comics</a>
+                            </div>
+                            <div class="row">
+                                <a href="fiction.html">Computer & Tech</a>
+                                <a href="fiction.html">Religion</a>
+                                <a href="fiction.html">Other</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="arrivals.html" class="main">New Arrivals</a>
+                    <a href="deals.html" class="main">Deals & Promotions</a>
+                    <a href="bestsellers.html" class="main">Best Sellers</a>
+                    <a href="shipping.html" class="main">Shipping & Returns</a>
+                    <a href="contactus.html" class="main">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+        <!--------------------->
+        <main class="container">
+            <div class="sign in">
+                <h3>Login</h3>
+                <form action="mailto:omar189350@bue.edu.eg" method="post" class="register">
+                    <div>
+                        <label id="myEmail">Email:</label><br>
+                        <input type="email" name="myEmail" placeholder="Email" required><br><br>
+                    </div>
+                    <div>
+                        <label id="myPassword">Password:</label><br>
+                        <input type="password" name="myPassword" placeholder="Password" required><br><br>
+                    </div>
+
+                    <label class="usercheck">
+                        <input type="checkbox">
+                        Remember me
+                        <span class="checkmark"></span>
+                    </label>
+                    <button class="btn">Login</button>
+                </form>
+            </div>
+            <div class="sign up">
+                <h3>Create A New Account</h3>
+                <form action="mailto:omar189350@bue.edu.eg" method="post" class="register">
+                    <div>
+                        <label>First Name:</label><br>
+                        <input type="text" name="myFName" placeholder="First Name" required><br><br>
+                    </div>
+                    <div>
+                        <label>Last Name:</label><br>
+                        <input type="text" name="myLName" placeholder="Last Name" required><br><br>
+
+                    </div>
+                    <div>
+                        <label>Email:</label><br>
+                        <input type="email" name="myEmail" placeholder="Email" required><br><br>
+                    </div>
+                    <div>
+                        <label>Password:</label><br>
+                        <input type="password" name="myPassword" placeholder="Password" required><br><br>
+                    </div>
+                    <div>
+                        <label>Confirm Password:</label><br>
+                        <input type="password" name="myPassword" placeholder="Confirm Password" required><br><br>
+                    </div>
+                    <label class="usercheck">
+                        <input type="checkbox" checked="checked" required>
+                        I agree to Terms & Conditions
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="usercheck">
+                        <input type="checkbox">
+                        Sign up for newsletter
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <button class="btn">Create Account</button>
+                </form>
+            </div>
+        </main>
+        <!--------------------->
+        <footer>
+            <div class="container">
+                <div class="footer1">
+                    <div class="info">
+                        <h3>Customer Care</h3>
+                        <hr>
+                        <a href="shipping.html">Shopping Guide</a>
+                        <a href="shipping.html">Return Policy</a>
+                        <a href="contactus.html">Contact Us</a>
+                        <a href="aboutus.html">About B4B</a>
+                    </div>
+                    <div class="follow">
+                        <h3>Follow Us</h3>
+                        <hr>
+                        <a href="https://www.facebook.com/" class="social"><img src="../icons/facebook.png"
+                                alt="facebook logo"></a>
+                        <a href="https://www.twitter.com/" class="social"><img src="../icons/twitter.png"
+                                alt="twitter logo"></a>
+                        <a href="https://www.instagram.com/" class="social"><img src="../icons/instagram.png"
+                                alt="instagram logo"></a>
+                        <a href="https://www.google.com/" class="social"><img src="../icons/google+.png"
+                                alt="google+ logo"></a>
+                    </div>
+                    <div class="mailform">
+                        <h3>Join Our Mailing List</h3>
+                        <hr>
+                        <form action="mailto:yousef190896@bue.edu.eg">
+                            <input type="email" name="email" placeholder="Your Email Address">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container f2">
+                <div class="footer2">
+                    <p>Copyright &copy; 2019. B4B Bookstore. All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!--------------------->
+    </div>
+</body>
+
+</html>

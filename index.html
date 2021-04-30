@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>B4B Bookstore | Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./logo/icon.png" sizes="32x32">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <!--------------------->
+        <header>
+            <div class="container">
+                <div class="main-logo">
+                    <a href="index.html"><img src="./logo/main.png" alt="B4B Bookstore"></a>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="What are you looking for?" name="search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="signin">
+                    <a href="./pages/signin_signup.html">
+                        <p>Sign In &#10095;</p><i class="fas fa-user-circle"></i>
+                    </a>
+                </div>
+                <div class="cart" id="cartBtn">
+                    <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span id="close">&times;</span>
+                        <p>Your Shopping Cart is Empty..</p>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById('myModal');
+                    var btn = document.getElementById("cartBtn");
+                    var span = document.getElementById("close");
+
+                    btn.onclick = function () {
+                        modal.style.display = "block";
+                    }
+
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+        </header>
+        <!--------------------->
+        <nav>
+            <div class="container">
+                <div class="topnav">
+                    <div class="dropdown">
+                        <a class="main dropbtn" href="#">Categories <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <a href="./pages/fiction.html">ِِArabic</a>
+                                <a href="./pages/fiction.html">Business</a>
+                                <a href="./pages/fiction.html">Biography</a>
+                            </div>
+                            <div class="row">
+                                <a href="./pages/fiction.html">Kids</a>
+                                <a href="./pages/fiction.html">History</a>
+                                <a href="./pages/fiction.html">Westerns</a>
+                            </div>
+                            <div class="row">
+                                <a href="./pages/fiction.html">Fiction & Literature</a>
+                                <a href="./pages/fiction.html">CookBooks & Food</a>
+                                <a href="./pages/fiction.html">Comics</a>
+                            </div>
+                            <div class="row">
+                                <a href="./pages/fiction.html">Computer & Tech</a>
+                                <a href="./pages/fiction.html">Religion</a>
+                                <a href="./pages/fiction.html">Other</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="./pages/arrivals.html" class="main">New Arrivals</a>
+                    <a href="./pages/deals.html" class="main">Deals & Promotions</a>
+                    <a href="./pages/bestsellers.html" class="main">Best Sellers</a>
+                    <a href="./pages/shipping.html" class="main">Shipping & Returns</a>
+                    <a href="./pages/contactus.html" class="main">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+        <!--------------------->
+        <main class="container">
+            <section id="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <a href="index.html"><img src="./img/slideshow/s1.jpg" style="width:100%"
+                            alt="The Auther's Bookshelf"></a>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <a href="./pages/bestsellers.html"><img src="./img/slideshow/s2.png" style="width:100%"
+                            alt="Books You have to read to believe"></a>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <a href="./pages/fiction.html"><img src="./img/slideshow/s3.jpg" style="width:100%"
+                            alt="historical fiction"></a>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = slides.length }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                    }
+                </script>
+            </section>
+
+            <div class="book-container">
+                <div class="rowtitle trending">
+                    <h3><i class="fas fa-fire"></i> Trending Now</h3>
+                </div>
+                <div class="row5book trending">
+                    <div class="bookcard trending">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/A%20Gentleman%20in%20Moscow.jpg" alt="A Gentleman in Moscow">
+                            <h4>A Gentleman in Moscow</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bookcard trending">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/The%20Valley%20of%20Amazement.jpg" alt="The Valley of Amazement">
+                            <h4>The Valley of Amazement</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bookcard trending">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/The%20Warriors.jpg" alt="The Warriors">
+                            <h4>The Warriors</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bookcard trending">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/To%20Kill%20a%20Mockingbird.jpg" alt="To Kill a Mockingbird">
+                            <h4>To Kill a Mockingbird</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bookcard trending">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/Total%20Control.jpg" alt="Total Control">
+                            <h4>Total Control</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container box">
+                <div class="offerbox"></div>
+                <a href="#" class="offerbox1"></a>
+            </div>
+
+            <div class="book-container">
+                <div class="rowtitle top10">
+                    <h3><i class="fab fa-slack-hash"></i> Top 10 Books</h3>
+                </div>
+                <div class="row3book top10">
+                    <div class="bookcard special">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/Where%20the%20Crawdads%20Sing.jpg" alt="Where the Crawdads Sing">
+                            <h4>Where the Crawdads Sing</h4>
+                            <p>For years, rumors of the “Marsh Girl” have haunted Barkley Cove, a quiet town on the
+                                North Carolina coast. So in late 1969, when handsome Chase Andrews is found dead, the
+                                locals immediately suspect Kya Clark, the so-called Marsh Girl.</p>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row4book">
+                    <div class="bookcard">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/Becoming.jpg" alt="Becoming">
+                            <h4>Becoming</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bookcard">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/Educated.jpg" alt="Educated">
+                            <h4>Educated</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bookcard">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/The%20Woman%20in%20the%20Window.jpg" alt="The Woman in the Window">
+                            <h4>The Woman in the Window</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bookcard">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/To%20Kill%20a%20Mockingbird.jpg" alt="To Kill a Mockingbird">
+                            <h4>To Kill a Mockingbird</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row5book">
+                    <div class="bookcard">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/Pet%20Sematary.jpg" alt="Pet Sematary">
+                            <h4>Pet Sematary</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bookcard">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/A%20Gentleman%20in%20Moscow.jpg" alt="A Gentleman in Moscow">
+                            <h4>A Gentleman in Moscow</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bookcard">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/Girl,%20Wash%20Your%20Face.jpg" alt="Girl, Wash Your Face">
+                            <h4>Girl, Wash Your Face</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bookcard">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/After.jpg" alt="After">
+                            <h4>After</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bookcard">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/The%20Silent%20Patient.jpg" alt="The Silent Patient">
+                            <h4>The Silent Patient</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container box">
+                <a href="./pages/fiction.html" class="offerbox2"></a>
+            </div>
+
+            <div class="book-container">
+                <div class="rowtitle recommended">
+                    <h3><i class="far fa-thumbs-up"></i> Recommended</h3>
+                </div>
+                <div class="row5book recommended">
+                    <div class="bookcard recommended">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/After.jpg" alt="After">
+                            <h4>After</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bookcard recommended">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/Girl,%20Wash%20Your%20Face.jpg" alt="Girl, Wash Your Face">
+                            <h4>Girl, Wash Your Face</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bookcard recommended">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/The%20Secrets%20You%20Keep.jpg" alt="The Secrets You Keep">
+                            <h4>The Secrets You Keep</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bookcard recommended">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/The%20Spook%20Who%20Sat%20By%20The%20Door.jpg"
+                                alt="The Spook Who Sat By The Door">
+                            <h4>The Spook Who Sat By The Door</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bookcard recommended">
+                        <a href="./pages/where_the_crawdads_sing.html">
+                            <img src="./img/The%20Night%20Olivia%20Fell.jpg" alt="The Night Olivia Fell">
+                            <h4>The Night Olivia Fell</h4>
+                            <div class="rating">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--------------------->
+        <footer>
+            <div class="container">
+                <div class="footer1">
+                    <div class="info">
+                        <h3>Customer Care</h3>
+                        <hr>
+                        <a href="./pages/shipping.html">Shopping Guide</a>
+                        <a href="./pages/shipping.html">Return Policy</a>
+                        <a href="./pages/contactus.html">Contact Us</a>
+                        <a href="./pages/aboutus.html">About B4B</a>
+                    </div>
+                    <div class="follow">
+                        <h3>Follow Us</h3>
+                        <hr>
+                        <a href="https://www.facebook.com/" class="social"><img src="./icons/facebook.png"
+                                alt="facebook logo"></a>
+                        <a href="https://www.twitter.com/" class="social"><img src="./icons/twitter.png"
+                                alt="twitter logo"></a>
+                        <a href="https://www.instagram.com/" class="social"><img src="./icons/instagram.png"
+                                alt="instagram logo"></a>
+                        <a href="https://www.google.com/" class="social"><img src="./icons/google+.png"
+                                alt="google+ logo"></a>
+                    </div>
+                    <div class="mailform">
+                        <h3>Join Our Mailing List</h3>
+                        <hr>
+                        <form action="mailto:yousef190896@bue.edu.eg" method="get">
+                            <input type="email" name="email" id="email" placeholder="Your Email Address" required>
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container f2">
+                <div class="footer2">
+                    <p>Copyright &copy; 2019. B4B Bookstore. All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!--------------------->
+    </div>
+</body>
+
+</html>

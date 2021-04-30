@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>B4B | Where the Crawdads Sing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../logo/icon.png" sizes="32x32">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/book.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <!--------------------->
+        <header>
+            <div class="container">
+                <div class="main-logo">
+                    <a href="../index.html"><img src="../logo/main.png" alt="B4B Bookstore"></a>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="What are you looking for?" name="search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="signin">
+                    <a href="signin_signup.html">
+                        <p>Sign In &#10095;</p><i class="fas fa-user-circle"></i>
+                    </a>
+                </div>
+                <div class="cart" id="cartBtn">
+                    <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span id="close">&times;</span>
+                        <p>Your Shopping Cart is Empty..</p>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById('myModal');
+                    var btn = document.getElementById("cartBtn");
+                    var span = document.getElementById("close");
+
+                    btn.onclick = function () {
+                        modal.style.display = "block";
+                    }
+
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+        </header>
+        <!--------------------->
+        <nav>
+            <div class="container">
+                <div class="topnav">
+                    <div class="dropdown">
+                        <a class="main dropbtn" href="#">Categories <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <a href="fiction.html">ِِArabic</a>
+                                <a href="fiction.html">Business</a>
+                                <a href="fiction.html">Biography</a>
+                            </div>
+                            <div class="row">
+                                <a href="fiction.html">Kids</a>
+                                <a href="fiction.html">History</a>
+                                <a href="fiction.html">Westerns</a>
+                            </div>
+                            <div class="row">
+                                <a href="fiction.html">Fiction & Literature</a>
+                                <a href="fiction.html">CookBooks & Food</a>
+                                <a href="fiction.html">Comics</a>
+                            </div>
+                            <div class="row">
+                                <a href="fiction.html">Computer & Tech</a>
+                                <a href="fiction.html">Religion</a>
+                                <a href="fiction.html">Other</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="arrivals.html" class="main">New Arrivals</a>
+                    <a href="deals.html" class="main">Deals & Promotions</a>
+                    <a href="bestsellers.html" class="main">Best Sellers</a>
+                    <a href="shipping.html" class="main">Shipping & Returns</a>
+                    <a href="contactus.html" class="main">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+        <!--------------------->
+        <div class="container">
+            <div class="sidenav">
+                <a href="../index.html">Home</a><br>
+                <a href="arrivals.html">New Arrivals</a><br>
+                <a href="deals.html">Promotions</a><br>
+                <a href="bestsellers.html">Best Sellers</a><br>
+                <a href="#" style="color: lightgray;">Books</a><br>
+                <div class="sub">
+                    <a href="fiction.html">ِِArabic</a><br>
+                    <a href="fiction.html">Business</a><br>
+                    <a href="fiction.html">Biography</a><br>
+                    <a href="fiction.html">Kids</a><br>
+                    <a href="fiction.html">History</a><br>
+                    <a href="fiction.html">Westerns</a><br>
+                    <a href="fiction.html" style="color: lightgray;">Fiction & Literature</a><br>
+                    <a href="fiction.html">CookBooks & Food</a><br>
+                    <a href="fiction.html">Comics</a><br>
+                    <a href="fiction.html">Computer & Tech</a><br>
+                    <a href="fiction.html">Religion</a><br>
+                    <a href="fiction.html">Other</a><br>
+                </div>
+                <a href="shipping.html">Shipping & Returns</a><br>
+                <a href="contactus.html">Contact Us</a><br>
+                <a href="aboutus.html">About Us</a><br>
+            </div>
+            <!--------------------->
+            <main>
+                <div class="book">
+                    <div class="cover">
+                        <img src="../img/books/3.jpg" alt="Where the Crawdads Sing">
+                    </div>
+                    <div class="info">
+                        <h4>Where the Crawdads Sing</h4>
+                        <h5>By Delia Owens</h5>
+                        <p class="price"><span>$</span>15.60<span class="discount">$ 25.60</span></p>
+                        <div class="rating">
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star"></i>
+                            <p class="review"> | 445 Customer Review</p>
+                        </div>
+                        <div class="description">
+                            <div class="title">
+                                <p>Publisher:</p>
+                                <p>Publication Date:</p>
+                                <p>Pages:</p>
+                            </div>
+                            <div class="details">
+                                <p>Penguin Publishing Group</p>
+                                <p>08/14/2018</p>
+                                <p>384</p>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="cart " id="text1" onclick="addCart()">Add<span>ed</span> to Cart</button>
+                            <script>
+                                function addCart() {
+                                    var text1 = document.getElementById("text1");
+                                    text1.classList.add("checked");
+                                }
+                                function addWishlist() {
+                                    var icon = document.getElementById("icon");
+                                    icon.classList.add("checked");
+                                    var text2 = document.getElementById("text2");
+                                    text2.classList.add("checked");
+                                }
+                            </script>
+                            <button class="wish" onclick="addWishlist()">
+                                <i id="icon" class="fas fa-heart "></i>
+                                <p id="text2" class="">Add<span>ed</span> to Wishlist</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview">
+                    <h4>Overview</h4>
+                    <div class="text">
+                        <p>
+                            #1 New York Times Bestseller
+                            A Reese Witherspoon x Hello Sunshine Book Club Pick
+
+                            "I can't even express how much I love this book! I didn't want this story to end!"—Reese
+                            Witherspoon
+
+                            "Painfully beautiful."—The New York Times Book Review
+
+                            "Perfect for fans of Barbara Kingsolver."—Bustle
+
+                            For years, rumors of the "Marsh Girl" have haunted Barkley Cove, a quiet town on the North
+                            Carolina coast. So in late 1969, when handsome Chase Andrews is found dead, the locals
+                            immediately suspect Kya Clark, the so-called Marsh Girl. But Kya is not what they say.
+                            Sensitive and intelligent, she has survived for years alone in the marsh that she calls
+                            home, finding friends in the gulls and lessons in the sand. Then the time comes when she
+                            yearns to be touched and loved. When two young men from town become intrigued by her wild
+                            beauty, Kya opens herself to a new life—until the unthinkable happens.
+
+                            Perfect for fans of Barbara Kingsolver and Karen Russell, Where the Crawdads Sing is at once
+                            an exquisite ode to the natural world, a heartbreaking coming-of-age story, and a surprising
+                            tale of possible murder. Owens reminds us that we are forever shaped by the children we once
+                            were, and that we are all subject to the beautiful and violent secrets that nature keeps.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="book-container">
+                    <div class="rowtitle">
+                        <h3>Similar Products</h3>
+                    </div>
+                    <div class="row5book">
+                        <div class="bookcard">
+                            <a href="#">
+                                <img src="../img/books/1984.jpg" alt="1984">
+                                <h4>1984</h4>
+                                <p>30 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="#">
+                                <img src="../img/books/Cemetery%20Road.jpg" alt="Cemetery Road">
+                                <h4>Cemetery Road</h4>
+                                <p>60.5 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="#">
+                                <img src="../img/books/A%20Gentleman%20in%20Moscow.jpg" alt="A Gentleman in Moscow">
+                                <h4>A Gentleman in Moscow</h4>
+                                <p>25 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="#">
+                                <img src="../img/books/Daisy%20Jones%20&%20The%20Six.jpg" alt="Daisy Jones & The Six">
+                                <h4>Daisy Jones & The Six</h4>
+                                <p><span class="discount">70 $</span> 55.5 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!--------------------->
+        <footer>
+            <div class="container">
+                <div class="footer1">
+                    <div class="info">
+                        <h3>Customer Care</h3>
+                        <hr>
+                        <a href="shipping.html">Shopping Guide</a>
+                        <a href="shipping.html">Return Policy</a>
+                        <a href="contactus.html">Contact Us</a>
+                        <a href="aboutus.html">About B4B</a>
+                    </div>
+                    <div class="follow">
+                        <h3>Follow Us</h3>
+                        <hr>
+                        <a href="https://www.facebook.com/" class="social"><img src="../icons/facebook.png"
+                                alt="facebook logo"></a>
+                        <a href="https://www.twitter.com/" class="social"><img src="../icons/twitter.png"
+                                alt="twitter logo"></a>
+                        <a href="https://www.instagram.com/" class="social"><img src="../icons/instagram.png"
+                                alt="instagram logo"></a>
+                        <a href="https://www.google.com/" class="social"><img src="../icons/google+.png"
+                                alt="google+ logo"></a>
+                    </div>
+                    <div class="mailform">
+                        <h3>Join Our Mailing List</h3>
+                        <hr>
+                        <form action="mailto:yousef190896@bue.edu.eg">
+                            <input type="email" name="email" placeholder="Your Email Address">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container f2">
+                <div class="footer2">
+                    <p>Copyright &copy; 2019. B4B Bookstore. All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!--------------------->
+    </div>
+</body>
+
+</html>

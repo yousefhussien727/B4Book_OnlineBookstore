@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>B4B | BestSellers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../logo/icon.png" sizes="32x32">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/secondary.css">
+    <link rel="stylesheet" href="../css/deals_style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <!--------------------->
+        <header>
+            <div class="container">
+                <div class="main-logo">
+                    <a href="../index.html"><img src="../logo/main.png" alt="B4B Bookstore"></a>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="What are you looking for?" name="search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="signin">
+                    <a href="signin_signup.html">
+                        <p>Sign In &#10095;</p><i class="fas fa-user-circle"></i>
+                    </a>
+                </div>
+                <div class="cart" id="cartBtn">
+                    <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span id="close">&times;</span>
+                        <p>Your Shopping Cart is Empty..</p>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById('myModal');
+                    var btn = document.getElementById("cartBtn");
+                    var span = document.getElementById("close");
+
+                    btn.onclick = function () {
+                        modal.style.display = "block";
+                    }
+
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+        </header>
+        <!--------------------->
+        <nav>
+            <div class="container">
+                <div class="topnav">
+                    <div class="dropdown">
+                        <a class="main dropbtn" href="#">Categories <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <a href="fiction.html">ِِArabic</a>
+                                <a href="fiction.html">Business</a>
+                                <a href="fiction.html">Biography</a>
+                            </div>
+                            <div class="row">
+                                <a href="fiction.html">Kids</a>
+                                <a href="fiction.html">History</a>
+                                <a href="fiction.html">Westerns</a>
+                            </div>
+                            <div class="row">
+                                <a href="fiction.html">Fiction & Literature</a>
+                                <a href="fiction.html">CookBooks & Food</a>
+                                <a href="fiction.html">Comics</a>
+                            </div>
+                            <div class="row">
+                                <a href="fiction.html">Computer & Tech</a>
+                                <a href="fiction.html">Religion</a>
+                                <a href="fiction.html">Other</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="arrivals.html" class="main">New Arrivals</a>
+                    <a href="deals.html" class="main">Deals & Promotions</a>
+                    <a href="bestsellers.html" class="main">Best Sellers</a>
+                    <a href="shipping.html" class="main">Shipping & Returns</a>
+                    <a href="contactus.html" class="main">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+        <!--------------------->
+        <div class="container">
+            <div class="sidenav">
+                <a href="../index.html">Home</a><br>
+                <a href="arrivals.html">New Arrivals</a><br>
+                <a href="deals.html" style="color: lightgray;">Promotions</a><br>
+                <a href="bestsellers.html">Best Sellers</a><br>
+                <a href="#">Books</a><br>
+                <div class="sub">
+                    <a href="fiction.html">ِِArabic</a><br>
+                    <a href="fiction.html">Business</a><br>
+                    <a href="fiction.html">Biography</a><br>
+                    <a href="fiction.html">Kids</a><br>
+                    <a href="fiction.html">History</a><br>
+                    <a href="fiction.html">Westerns</a><br>
+                    <a href="fiction.html">Fiction & Literature</a><br>
+                    <a href="fiction.html">CookBooks & Food</a><br>
+                    <a href="fiction.html">Comics</a><br>
+                    <a href="fiction.html">Computer & Tech</a><br>
+                    <a href="fiction.html">Religion</a><br>
+                    <a href="fiction.html">Other</a><br>
+                </div>
+                <a href="shipping.html">Shipping & Returns</a><br>
+                <a href="contactus.html">Contact Us</a><br>
+                <a href="aboutus.html">About Us</a><br>
+            </div>
+            <!--------------------->
+            <main>
+                <h2>Deals & Promotions</h2>
+                <hr>
+                <div class="book-container">
+                    <div class="rowtitle">
+                        <h3>Top Deals</h3>
+                    </div>
+                    <div class="row4book first">
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/3.jpg" alt="Where the Crawdads Sing">
+                                <h4>Where the Crawdads Sing</h4>
+                                <p><span class="discount">70 $</span> 55.5 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/1.jpg" alt="The Cornwalls Are Gone">
+                                <h4>The Cornwalls Are Gone</h4>
+                                <p><span class="discount">30 $</span> 10.5 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/runaway.jpg" alt="Run Away">
+                                <h4>Run Away</h4>
+                                <p><span class="discount">60 $</span> 50 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row5book">
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/thechef.jpg" alt="The Chef">
+                                <h4>The Chef</h4>
+                                <p><span class="discount">100 $</span> 75.5 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/thesilentpatient.jpg" alt="The Silent Patient">
+                                <h4>The Silent Patient</h4>
+                                <p>6.99 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/wolfback.jpg" alt="Wolf Pack">
+                                <h4>Wolf Pack</h4>
+                                <p>8.99 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/celticempire.jpg" alt="Celtic Empire">
+                                <h4>Celtic Empire</h4>
+                                <p><span class="discount">120 $</span> 79.99 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <div class="rowtitle ">
+                        <h3>Special Editions</h3>
+                    </div>
+
+                    <div class="row4book first">
+
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/Fivefeetapart.jpg" alt="Five Feet Apart">
+                                <h4>Five Feet Apart</h4>
+                                <p>36.25 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/TheOutsiders.jpg" alt="The Outsiders">
+                                <h4>The Outsiders</h4>
+                                <p>120 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/thelost.jpg" alt="The Lost">
+                                <h4>The Lost</h4>
+                                <p>42 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row5book">
+
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/defyme.jpg" alt="Defy Me">
+                                <h4>Defy Me</h4>
+                                <p>90.5 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/thelongwaydown.jpg" alt="Long Way Down">
+                                <h4>Long Way Down</h4>
+                                <p>29.99 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/dearmartin.jpg" alt="Dear Martin">
+                                <h4>Dear Martin</h4>
+                                <p>79.99 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/redqueen.jpg" alt="Red Queen">
+                                <h4>Red Queen</h4>
+                                <p>90.5 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <div class="rowtitle ">
+                        <h3>Packages Promotions</h3>
+                    </div>
+
+                    <div class="row4book first">
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/thelostheir.jpg" alt="The Lost Heir">
+                                <h4>The Lost Heir</h4>
+                                <p><span class="discount">45.5 $</span> 30 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/pax.jpg" alt="Pax">
+                                <h4>Pax</h4>
+                                <p><span class="discount">19.99 $</span> 9.99 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/kattvsdig.jpg" alt="Katt vs. Dogg">
+                                <h4>Katt vs. Dogg</h4>
+                                <p><span class="discount">34.99 $</span> 25.5 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row5book">
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/drama.jpg" alt="Drama">
+                                <h4>Drama</h4>
+                                <p><span class="discount">70 $</span> 55.5 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/themeltdown.jpg" alt="The Meltdown">
+                                <h4>The Meltdown</h4>
+                                <p><span class="discount">20 $</span> 15 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/bignate.jpg" alt="Big Nate">
+                                <h4>Big Nate</h4>
+                                <p>11 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bookcard">
+                            <a href="where_the_crawdads_sing.html">
+                                <img src="../img/books/wildcard.jpg" alt="Wildcard">
+                                <h4>Wildcard</h4>
+                                <p>6.99 $</p>
+                                <div class="rating">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!--------------------->
+        <footer>
+            <div class="container">
+                <div class="footer1">
+                    <div class="info">
+                        <h3>Customer Care</h3>
+                        <hr>
+                        <a href="shipping.html">Shopping Guide</a>
+                        <a href="shipping.html">Return Policy</a>
+                        <a href="contactus.html">Contact Us</a>
+                        <a href="aboutus.html">About B4B</a>
+                    </div>
+                    <div class="follow">
+                        <h3>Follow Us</h3>
+                        <hr>
+                        <a href="https://www.facebook.com/" class="social"><img src="../icons/facebook.png"
+                                alt="facebook logo"></a>
+                        <a href="https://www.twitter.com/" class="social"><img src="../icons/twitter.png"
+                                alt="twitter logo"></a>
+                        <a href="https://www.instagram.com/" class="social"><img src="../icons/instagram.png"
+                                alt="instagram logo"></a>
+                        <a href="https://www.google.com/" class="social"><img src="../icons/google+.png"
+                                alt="google+ logo"></a>
+                    </div>
+                    <div class="mailform">
+                        <h3>Join Our Mailing List</h3>
+                        <hr>
+                        <form action="mailto:yousef190896@bue.edu.eg">
+                            <input type="email" name="email" placeholder="Your Email Address">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container f2">
+                <div class="footer2">
+                    <p>Copyright &copy; 2019. B4B Bookstore. All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!--------------------->
+    </div>
+</body>
+
+</html>
