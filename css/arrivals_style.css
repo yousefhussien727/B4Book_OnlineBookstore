@@ -1,0 +1,19 @@
+/* Best Sellers -- New Arrivals -- Deals&Promotions */
+
+main h2 {
+    color: #0c8f4e;
+}
+.row3book , .row4book ,.row5book , .row6book {
+    background-color: rgb(235, 235, 235);
+}
+.row4book.first {
+    box-shadow: inset 0 30px 20px -10px #0c8f4e;
+}
+.rowtitle {
+    background-color: #0c8f4e;
+    color: #ffffff;
+}
+.bookcard:hover {
+    border: 1px solid #00d300;
+}
+

@@ -1,0 +1,103 @@
+/* Sub Categories */
+
+/* side navigation adjustment */
+.sidenav {
+    height: 1500px;
+}
+
+/* main book list */
+main h2 {
+    margin: 10px 30px 0;
+    font-size: 26px;
+}
+main hr {
+    margin: 0 0 15px -20px;
+}
+.book-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.row3book, .row4book, .row5book, .row6book {
+    width: 100%;
+    background-color: #f2f2f2;
+    display: inline-flex;
+    justify-content: center;
+}
+
+/* different sizes */
+.row3book .bookcard {
+    width: 40%;
+}
+.row4book .bookcard {
+    width: 25%;
+}
+.row5book .bookcard {
+    width: 20%;
+}
+
+/* justify bookcard elements*/
+.bookcard {
+    float: left;
+    width: 25%;
+    margin: 10px 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+.bookcard a {
+    text-decoration: none;
+    outline: none;
+    color: black;
+}
+.bookcard a:visited {
+    text-decoration: none;
+    outline: none;
+    color: black;
+}
+.bookcard:visited {
+    border: 1px solid lightgray;
+}
+.bookcard:hover {
+    border: 1px solid #1ebbd7;
+}
+.bookcard img {
+    width: 60%;
+    border-radius: 5px;
+    height: 150px;
+    overflow: hidden;
+}
+.bookcard h4 {
+    margin: 0;
+    height: 25px;
+    overflow: hidden;
+}
+.bookcard p {
+    margin: 0;
+    height: auto;
+    overflow: hidden;
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 16px;
+}
+.bookcard .discount {
+    color: darkred;
+    text-decoration: line-through;
+}
+.bookcard .rating {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    width: 80%;
+    margin: auto;
+}
+.bookcard .rating i {
+    font-size: 15px;
+    color: black;
+}
+.bookcard .rating i.checked {
+    color: orange;
+}
